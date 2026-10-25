@@ -1,0 +1,50 @@
+{
+ "call_id": 408413,
+ "features": {
+  "n_segments": 68,
+  "has_hold_queue": true,
+  "hold_start_sec": 73.08,
+  "hold_end_sec": 389.005,
+  "hold_sec": 315.9,
+  "survey_prompt_reached": false,
+  "queue_abandoned": false,
+  "unclear_share": 0.0,
+  "speech_sec_after_hold": 5.3,
+  "speech_sec_total": 68.6
+ },
+ "duration_sec": 395.97999878400003,
+ "asr_language": "Hindi",
+ "analyzed_at": "2026-10-24T14:08:31.627952+00:00",
+ "model": "openai/gpt-oss-120b",
+ "tokens": 2332,
+ "analysis": {
+  "language_chosen": "hindi",
+  "query_category": "pos_billing",
+  "customer_bot_attitude": "engaged",
+  "sentiment_start": "neutral",
+  "sentiment_end": "neutral",
+  "sentiment_overall": "neutral",
+  "issue_category": "not_discussed",
+  "resolved": "unknown",
+  "feedback_theme": "none",
+  "call_outcome": "abandoned_in_queue",
+  "transcript_quality": "good",
+  "bot_issues": [
+   "none"
+  ],
+  "language_request_honored": true,
+  "instructions_followed": true,
+  "reached_human_agent": false,
+  "verbal_feedback_given": false,
+  "bot_guidance_score": 5,
+  "agent_quality_score": null,
+  "sentiment_score": 0,
+  "confidence": 5,
+  "issue_summary": "",
+  "feedback_text": "",
+  "evidence_sentiment": "",
+  "evidence_bot": "Bot asked language, query, system status in Hindi and followed each answer",
+  "missed_instructions": []
+ },
+ "postprocess_changes": []
+}

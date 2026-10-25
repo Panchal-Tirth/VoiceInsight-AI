@@ -1,0 +1,51 @@
+{
+ "call_id": 409876,
+ "features": {
+  "n_segments": 74,
+  "has_hold_queue": false,
+  "hold_start_sec": null,
+  "hold_end_sec": null,
+  "hold_sec": 0.0,
+  "survey_prompt_reached": false,
+  "queue_abandoned": false,
+  "unclear_share": 0.154,
+  "speech_sec_after_hold": 429.6,
+  "speech_sec_total": 429.6
+ },
+ "duration_sec": 584.3999982079999,
+ "asr_language": "Hindi",
+ "analyzed_at": "2026-10-24T14:12:43.053411+00:00",
+ "model": "openai/gpt-oss-20b",
+ "tokens": 3376,
+ "analysis": {
+  "language_chosen": "hindi",
+  "query_category": "pos_billing",
+  "customer_bot_attitude": "engaged",
+  "sentiment_start": "neutral",
+  "sentiment_end": "neutral",
+  "sentiment_overall": "neutral",
+  "issue_category": "printer_setup",
+  "resolved": "no",
+  "feedback_theme": "thanks_only",
+  "call_outcome": "agent_unresolved",
+  "transcript_quality": "fair",
+  "bot_issues": [
+   "repeated_question",
+   "audio_unclear"
+  ],
+  "language_request_honored": true,
+  "instructions_followed": true,
+  "reached_human_agent": true,
+  "verbal_feedback_given": true,
+  "bot_guidance_score": 4,
+  "agent_quality_score": 3,
+  "sentiment_score": 0,
+  "confidence": 3,
+  "issue_summary": "KOT imprint not appearing after bill modification",
+  "feedback_text": "Thank you for your feedback",
+  "evidence_sentiment": "",
+  "evidence_bot": "हिंदी हिंदी",
+  "missed_instructions": []
+ },
+ "postprocess_changes": []
+}

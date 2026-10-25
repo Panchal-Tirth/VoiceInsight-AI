@@ -1,0 +1,50 @@
+{
+ "call_id": 400954,
+ "features": {
+  "n_segments": 53,
+  "has_hold_queue": true,
+  "hold_start_sec": 39.0,
+  "hold_end_sec": 156.32,
+  "hold_sec": 117.3,
+  "survey_prompt_reached": false,
+  "queue_abandoned": false,
+  "unclear_share": 0.057,
+  "speech_sec_after_hold": 230.2,
+  "speech_sec_total": 259.8
+ },
+ "duration_sec": 424.47999897600005,
+ "asr_language": "English",
+ "analyzed_at": "2026-10-24T13:47:26.498230+00:00",
+ "model": "openai/gpt-oss-120b",
+ "tokens": 2855,
+ "analysis": {
+  "language_chosen": "english",
+  "query_category": "pos_billing",
+  "customer_bot_attitude": "engaged",
+  "sentiment_start": "neutral",
+  "sentiment_end": "neutral",
+  "sentiment_overall": "neutral",
+  "issue_category": "other",
+  "resolved": "unknown",
+  "feedback_theme": "thanks_only",
+  "call_outcome": "unclear",
+  "transcript_quality": "fair",
+  "bot_issues": [
+   "none"
+  ],
+  "language_request_honored": true,
+  "instructions_followed": true,
+  "reached_human_agent": true,
+  "verbal_feedback_given": true,
+  "bot_guidance_score": 5,
+  "agent_quality_score": 2,
+  "sentiment_score": 0,
+  "confidence": 3,
+  "issue_summary": "change name of suspended outlet and renew subscription",
+  "feedback_text": "Thank you for your feedback",
+  "evidence_sentiment": "Thank you for your feedback",
+  "evidence_bot": "English.",
+  "missed_instructions": []
+ },
+ "postprocess_changes": []
+}

@@ -1,0 +1,51 @@
+{
+ "call_id": 409718,
+ "features": {
+  "n_segments": 28,
+  "has_hold_queue": true,
+  "hold_start_sec": 30.0,
+  "hold_end_sec": 124.11,
+  "hold_sec": 94.1,
+  "survey_prompt_reached": false,
+  "queue_abandoned": false,
+  "unclear_share": 0.028,
+  "speech_sec_after_hold": 171.0,
+  "speech_sec_total": 175.3
+ },
+ "duration_sec": 436.280003712,
+ "asr_language": "English",
+ "analyzed_at": "2026-10-24T14:11:40.149829+00:00",
+ "model": "openai/gpt-oss-120b",
+ "tokens": 2385,
+ "analysis": {
+  "language_chosen": "none",
+  "query_category": "not_captured",
+  "customer_bot_attitude": "reluctant",
+  "sentiment_start": "unknown",
+  "sentiment_end": "unknown",
+  "sentiment_overall": "unknown",
+  "issue_category": "not_discussed",
+  "resolved": "unknown",
+  "feedback_theme": "none",
+  "call_outcome": "abandoned_in_bot",
+  "transcript_quality": "poor",
+  "bot_issues": [
+   "no_response",
+   "audio_unclear"
+  ],
+  "language_request_honored": null,
+  "instructions_followed": null,
+  "reached_human_agent": false,
+  "verbal_feedback_given": false,
+  "bot_guidance_score": 2,
+  "agent_quality_score": null,
+  "sentiment_score": 0,
+  "confidence": 2,
+  "issue_summary": "",
+  "feedback_text": "",
+  "evidence_sentiment": "",
+  "evidence_bot": "Are you comfortable in Hindi or English?",
+  "missed_instructions": []
+ },
+ "postprocess_changes": []
+}

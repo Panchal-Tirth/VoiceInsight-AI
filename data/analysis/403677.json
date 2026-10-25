@@ -1,0 +1,52 @@
+{
+ "call_id": 403677,
+ "features": {
+  "n_segments": 40,
+  "has_hold_queue": false,
+  "hold_start_sec": null,
+  "hold_end_sec": null,
+  "hold_sec": 0.0,
+  "survey_prompt_reached": false,
+  "queue_abandoned": false,
+  "unclear_share": 0.0,
+  "speech_sec_after_hold": 350.9,
+  "speech_sec_total": 350.9
+ },
+ "duration_sec": 470.720000512,
+ "asr_language": "Hindi",
+ "analyzed_at": "2026-10-24T13:54:48.985928+00:00",
+ "model": "openai/gpt-oss-120b",
+ "tokens": 3031,
+ "analysis": {
+  "language_chosen": "none",
+  "query_category": "not_captured",
+  "customer_bot_attitude": "reluctant",
+  "sentiment_start": "unknown",
+  "sentiment_end": "unknown",
+  "sentiment_overall": "unknown",
+  "issue_category": "printer_setup",
+  "resolved": "partial",
+  "feedback_theme": "none",
+  "call_outcome": "agent_unresolved",
+  "transcript_quality": "fair",
+  "bot_issues": [
+   "misunderstood_customer",
+   "repeated_question",
+   "no_response"
+  ],
+  "language_request_honored": null,
+  "instructions_followed": null,
+  "reached_human_agent": true,
+  "verbal_feedback_given": false,
+  "bot_guidance_score": 2,
+  "agent_quality_score": 3,
+  "sentiment_score": 0,
+  "confidence": 3,
+  "issue_summary": "kitchen printer not printing, need IP configuration",
+  "feedback_text": "",
+  "evidence_sentiment": "",
+  "evidence_bot": "आप हिंदी में कमफिटबल हैं या इंग्लिश में?",
+  "missed_instructions": []
+ },
+ "postprocess_changes": []
+}

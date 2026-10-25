@@ -1,0 +1,50 @@
+{
+ "call_id": 410415,
+ "features": {
+  "n_segments": 3,
+  "has_hold_queue": false,
+  "hold_start_sec": null,
+  "hold_end_sec": null,
+  "hold_sec": 0.0,
+  "survey_prompt_reached": false,
+  "queue_abandoned": false,
+  "unclear_share": 0.0,
+  "speech_sec_after_hold": 5.0,
+  "speech_sec_total": 5.0
+ },
+ "duration_sec": 13.800000512,
+ "asr_language": "Hindi",
+ "analyzed_at": "2026-10-24T14:13:46.539015+00:00",
+ "model": "openai/gpt-oss-20b",
+ "tokens": 1986,
+ "analysis": {
+  "language_chosen": "none",
+  "query_category": "not_captured",
+  "customer_bot_attitude": "no_interaction",
+  "sentiment_start": "unknown",
+  "sentiment_end": "unknown",
+  "sentiment_overall": "unknown",
+  "issue_category": "not_discussed",
+  "resolved": "unknown",
+  "feedback_theme": "none",
+  "call_outcome": "unclear",
+  "transcript_quality": "good",
+  "bot_issues": [
+   "no_response"
+  ],
+  "language_request_honored": null,
+  "instructions_followed": null,
+  "reached_human_agent": false,
+  "verbal_feedback_given": false,
+  "bot_guidance_score": null,
+  "agent_quality_score": null,
+  "sentiment_score": 0,
+  "confidence": 3,
+  "issue_summary": "",
+  "feedback_text": "",
+  "evidence_sentiment": "",
+  "evidence_bot": "आप हिंदी में कमफ़िटबल हैं या इंग्लिश में?",
+  "missed_instructions": []
+ },
+ "postprocess_changes": []
+}

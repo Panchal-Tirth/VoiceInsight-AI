@@ -1,0 +1,53 @@
+{
+ "call_id": 399553,
+ "features": {
+  "n_segments": 63,
+  "has_hold_queue": true,
+  "hold_start_sec": 48.94,
+  "hold_end_sec": 301.07,
+  "hold_sec": 252.1,
+  "survey_prompt_reached": true,
+  "queue_abandoned": false,
+  "unclear_share": 0.0,
+  "speech_sec_after_hold": 224.6,
+  "speech_sec_total": 257.4
+ },
+ "duration_sec": 552.1800012159999,
+ "asr_language": "English",
+ "analyzed_at": "2026-10-24T13:35:54.396148+00:00",
+ "model": "openai/gpt-oss-120b",
+ "tokens": 3040,
+ "analysis": {
+  "language_chosen": "english",
+  "query_category": "pos_billing",
+  "customer_bot_attitude": "engaged",
+  "sentiment_start": "neutral",
+  "sentiment_end": "neutral",
+  "sentiment_overall": "neutral",
+  "issue_category": "billing_error",
+  "resolved": "no",
+  "feedback_theme": "none",
+  "call_outcome": "agent_unresolved",
+  "transcript_quality": "fair",
+  "bot_issues": [
+   "misunderstood_customer",
+   "repeated_question"
+  ],
+  "language_request_honored": true,
+  "instructions_followed": false,
+  "reached_human_agent": true,
+  "verbal_feedback_given": false,
+  "bot_guidance_score": 4,
+  "agent_quality_score": null,
+  "sentiment_score": 0,
+  "confidence": 3,
+  "issue_summary": "remove packaging charge at item level",
+  "feedback_text": "",
+  "evidence_sentiment": "",
+  "evidence_bot": "Maaf ki jiye... Aap Hindi ya English...",
+  "missed_instructions": [
+   "language choice ignored"
+  ]
+ },
+ "postprocess_changes": []
+}

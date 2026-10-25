@@ -1,0 +1,50 @@
+{
+ "call_id": 403605,
+ "features": {
+  "n_segments": 90,
+  "has_hold_queue": true,
+  "hold_start_sec": 35.04,
+  "hold_end_sec": 277.965,
+  "hold_sec": 242.9,
+  "survey_prompt_reached": false,
+  "queue_abandoned": false,
+  "unclear_share": 0.129,
+  "speech_sec_after_hold": 159.0,
+  "speech_sec_total": 181.8
+ },
+ "duration_sec": 573.139997632,
+ "asr_language": "English",
+ "analyzed_at": "2026-10-24T13:53:45.271344+00:00",
+ "model": "openai/gpt-oss-120b",
+ "tokens": 2522,
+ "analysis": {
+  "language_chosen": "english",
+  "query_category": "pos_billing",
+  "customer_bot_attitude": "engaged",
+  "sentiment_start": "neutral",
+  "sentiment_end": "unknown",
+  "sentiment_overall": "neutral",
+  "issue_category": "not_discussed",
+  "resolved": "unknown",
+  "feedback_theme": "none",
+  "call_outcome": "unclear",
+  "transcript_quality": "fair",
+  "bot_issues": [
+   "none"
+  ],
+  "language_request_honored": true,
+  "instructions_followed": true,
+  "reached_human_agent": true,
+  "verbal_feedback_given": false,
+  "bot_guidance_score": 5,
+  "agent_quality_score": null,
+  "sentiment_score": 0,
+  "confidence": 3,
+  "issue_summary": "",
+  "feedback_text": "",
+  "evidence_sentiment": "",
+  "evidence_bot": "English. Billing Support. Yes.",
+  "missed_instructions": []
+ },
+ "postprocess_changes": []
+}

@@ -1,0 +1,52 @@
+{
+ "call_id": 405478,
+ "features": {
+  "n_segments": 33,
+  "has_hold_queue": false,
+  "hold_start_sec": null,
+  "hold_end_sec": null,
+  "hold_sec": 0.0,
+  "survey_prompt_reached": false,
+  "queue_abandoned": false,
+  "unclear_share": 0.0,
+  "speech_sec_after_hold": 225.2,
+  "speech_sec_total": 225.2
+ },
+ "duration_sec": 324.200004992,
+ "asr_language": "Hindi",
+ "analyzed_at": "2026-10-24T14:02:10.870058+00:00",
+ "model": "openai/gpt-oss-120b",
+ "tokens": 2612,
+ "analysis": {
+  "language_chosen": "hindi",
+  "query_category": "not_captured",
+  "customer_bot_attitude": "engaged",
+  "sentiment_start": "neutral",
+  "sentiment_end": "unknown",
+  "sentiment_overall": "neutral",
+  "issue_category": "not_discussed",
+  "resolved": "unknown",
+  "feedback_theme": "none",
+  "call_outcome": "unclear",
+  "transcript_quality": "poor",
+  "bot_issues": [
+   "misunderstood_customer",
+   "repeated_question",
+   "no_response"
+  ],
+  "language_request_honored": true,
+  "instructions_followed": true,
+  "reached_human_agent": false,
+  "verbal_feedback_given": false,
+  "bot_guidance_score": 2,
+  "agent_quality_score": null,
+  "sentiment_score": 0,
+  "confidence": 2,
+  "issue_summary": "",
+  "feedback_text": "",
+  "evidence_sentiment": "",
+  "evidence_bot": "Repeated query category question after unclear answer",
+  "missed_instructions": []
+ },
+ "postprocess_changes": []
+}

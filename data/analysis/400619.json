@@ -1,0 +1,50 @@
+{
+ "call_id": 400619,
+ "features": {
+  "n_segments": 18,
+  "has_hold_queue": false,
+  "hold_start_sec": null,
+  "hold_end_sec": null,
+  "hold_sec": 0.0,
+  "survey_prompt_reached": false,
+  "queue_abandoned": false,
+  "unclear_share": 0.0,
+  "speech_sec_after_hold": 188.9,
+  "speech_sec_total": 188.9
+ },
+ "duration_sec": 213.47999411199999,
+ "asr_language": "Hindi",
+ "analyzed_at": "2026-10-24T13:45:20.195722+00:00",
+ "model": "openai/gpt-oss-120b",
+ "tokens": 5325,
+ "analysis": {
+  "language_chosen": "hindi",
+  "query_category": "not_captured",
+  "customer_bot_attitude": "engaged",
+  "sentiment_start": "neutral",
+  "sentiment_end": "neutral",
+  "sentiment_overall": "neutral",
+  "issue_category": "billing_error",
+  "resolved": "unknown",
+  "feedback_theme": "none",
+  "call_outcome": "unclear",
+  "transcript_quality": "fair",
+  "bot_issues": [
+   "misunderstood_customer"
+  ],
+  "language_request_honored": true,
+  "instructions_followed": true,
+  "reached_human_agent": true,
+  "verbal_feedback_given": false,
+  "bot_guidance_score": 3,
+  "agent_quality_score": 2,
+  "sentiment_score": 0,
+  "confidence": 3,
+  "issue_summary": "configure POS for mobile orders",
+  "feedback_text": "",
+  "evidence_sentiment": "",
+  "evidence_bot": "आप हिंदी में कमफिटबल हैं या इंग्लिश में?",
+  "missed_instructions": []
+ },
+ "postprocess_changes": []
+}

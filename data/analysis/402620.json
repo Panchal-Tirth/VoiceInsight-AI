@@ -1,0 +1,51 @@
+{
+ "call_id": 402620,
+ "features": {
+  "n_segments": 51,
+  "has_hold_queue": true,
+  "hold_start_sec": 104.24,
+  "hold_end_sec": 183.015,
+  "hold_sec": 78.8,
+  "survey_prompt_reached": false,
+  "queue_abandoned": false,
+  "unclear_share": 0.055,
+  "speech_sec_after_hold": 183.2,
+  "speech_sec_total": 253.8
+ },
+ "duration_sec": 445.10000339199996,
+ "asr_language": "Hindi",
+ "analyzed_at": "2026-10-24T13:51:36.638703+00:00",
+ "model": "openai/gpt-oss-120b",
+ "tokens": 2914,
+ "analysis": {
+  "language_chosen": "none",
+  "query_category": "not_captured",
+  "customer_bot_attitude": "reluctant",
+  "sentiment_start": "unknown",
+  "sentiment_end": "unknown",
+  "sentiment_overall": "unknown",
+  "issue_category": "printer_setup",
+  "resolved": "unknown",
+  "feedback_theme": "none",
+  "call_outcome": "bot_failure",
+  "transcript_quality": "fair",
+  "bot_issues": [
+   "no_response",
+   "abrupt_transfer"
+  ],
+  "language_request_honored": null,
+  "instructions_followed": null,
+  "reached_human_agent": false,
+  "verbal_feedback_given": false,
+  "bot_guidance_score": 1,
+  "agent_quality_score": null,
+  "sentiment_score": 0,
+  "confidence": 2,
+  "issue_summary": "printer paper width too large, needs adjustment",
+  "feedback_text": "",
+  "evidence_sentiment": "",
+  "evidence_bot": "आप हिंदी में कमफिटबल हैं या इंग्लिश में?",
+  "missed_instructions": []
+ },
+ "postprocess_changes": []
+}

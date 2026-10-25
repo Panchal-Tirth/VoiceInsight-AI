@@ -1,0 +1,53 @@
+{
+ "call_id": 408506,
+ "features": {
+  "n_segments": 41,
+  "has_hold_queue": true,
+  "hold_start_sec": 7.72,
+  "hold_end_sec": 88.095,
+  "hold_sec": 80.4,
+  "survey_prompt_reached": false,
+  "queue_abandoned": false,
+  "unclear_share": 0.072,
+  "speech_sec_after_hold": 137.9,
+  "speech_sec_total": 143.4
+ },
+ "duration_sec": 281.420004928,
+ "asr_language": "English",
+ "analyzed_at": "2026-10-24T14:10:35.276516+00:00",
+ "model": "openai/gpt-oss-120b",
+ "tokens": 2671,
+ "analysis": {
+  "language_chosen": "hindi",
+  "query_category": "not_captured",
+  "customer_bot_attitude": "engaged",
+  "sentiment_start": "neutral",
+  "sentiment_end": "neutral",
+  "sentiment_overall": "neutral",
+  "issue_category": "billing_error",
+  "resolved": "partial",
+  "feedback_theme": "thanks_only",
+  "call_outcome": "agent_unresolved",
+  "transcript_quality": "fair",
+  "bot_issues": [
+   "no_response",
+   "ignored_language_choice"
+  ],
+  "language_request_honored": null,
+  "instructions_followed": false,
+  "reached_human_agent": true,
+  "verbal_feedback_given": true,
+  "bot_guidance_score": 2,
+  "agent_quality_score": 3,
+  "sentiment_score": 0,
+  "confidence": 3,
+  "issue_summary": "need billing access and menu download instructions",
+  "feedback_text": "feedback kar dijega thank you",
+  "evidence_sentiment": "thank you",
+  "evidence_bot": "Hindi.",
+  "missed_instructions": [
+   "language choice not followed"
+  ]
+ },
+ "postprocess_changes": []
+}

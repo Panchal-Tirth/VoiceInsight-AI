@@ -1,0 +1,50 @@
+{
+ "call_id": 400923,
+ "features": {
+  "n_segments": 37,
+  "has_hold_queue": true,
+  "hold_start_sec": 83.67,
+  "hold_end_sec": 174.14,
+  "hold_sec": 90.5,
+  "survey_prompt_reached": false,
+  "queue_abandoned": false,
+  "unclear_share": 0.074,
+  "speech_sec_after_hold": 63.3,
+  "speech_sec_total": 131.8
+ },
+ "duration_sec": 308.040005504,
+ "asr_language": "Hindi",
+ "analyzed_at": "2026-10-24T13:47:24.295842+00:00",
+ "model": "openai/gpt-oss-120b",
+ "tokens": 2671,
+ "analysis": {
+  "language_chosen": "hindi",
+  "query_category": "pos_billing",
+  "customer_bot_attitude": "engaged",
+  "sentiment_start": "neutral",
+  "sentiment_end": "negative",
+  "sentiment_overall": "negative",
+  "issue_category": "billing_error",
+  "resolved": "no",
+  "feedback_theme": "none",
+  "call_outcome": "agent_unresolved",
+  "transcript_quality": "fair",
+  "bot_issues": [
+   "none"
+  ],
+  "language_request_honored": true,
+  "instructions_followed": true,
+  "reached_human_agent": true,
+  "verbal_feedback_given": false,
+  "bot_guidance_score": 5,
+  "agent_quality_score": 2,
+  "sentiment_score": -1,
+  "confidence": 3,
+  "issue_summary": "coupon not applying in POS billing",
+  "feedback_text": "",
+  "evidence_sentiment": "उपने कुपन अप्लाई करना था ... कुपन ऐड नहीं हो रहा था",
+  "evidence_bot": "हिंदी में.",
+  "missed_instructions": []
+ },
+ "postprocess_changes": []
+}

@@ -1,0 +1,36 @@
+# Central config. Scaling from a sample to all calls = change values here.
+
+paths:
+  raw_csv: data/raw/call_logs_export_2026-10-22.csv
+  manifest: data/manifest.csv
+  sample_ids: data/sample_ids.csv
+  audio_dir: data/audio
+  transcripts_dir: data/transcripts
+  analysis_dir: data/analysis
+  processed_dir: data/processed
+  logs_dir: logs
+
+download:
+  workers: 8            # parallel downloads (no rate limit on the audio host)
+  retries: 3
+  timeout_sec: 60
+
+audit:
+  n_calls: 5            # Phase 1: how many calls to download and inspect
+
+groq:
+  whisper_model: whisper-large-v3
+  analysis_model: openai/gpt-oss-120b
+  fallback_models:
+    - openai/gpt-oss-20b
+    - qwen/qwen3.8-27b
+
+scan:
+  workers: 16           # HEAD requests only, very light
+  checkpoint_every: 500
+  bytes_per_sec: 4000   # 32 kbps constant bitrate (confirmed by audit) -> 4000 bytes/s
+
+sample:
+  size: 70
+  max_duration_sec: 600   # calls longer than this are excluded from the deep-analysis sample
+  seed: 42

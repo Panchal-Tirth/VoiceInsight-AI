@@ -1,0 +1,54 @@
+{
+ "call_id": 401400,
+ "features": {
+  "n_segments": 55,
+  "has_hold_queue": true,
+  "hold_start_sec": 107.205475,
+  "hold_end_sec": 143.48547,
+  "hold_sec": 36.3,
+  "survey_prompt_reached": true,
+  "queue_abandoned": false,
+  "unclear_share": 0.0,
+  "speech_sec_after_hold": 224.4,
+  "speech_sec_total": 322.8
+ },
+ "duration_sec": 400.90190897,
+ "asr_language": "Hindi",
+ "analyzed_at": "2026-10-24T13:48:29.052203+00:00",
+ "model": "openai/gpt-oss-120b",
+ "tokens": 3050,
+ "analysis": {
+  "language_chosen": "hindi",
+  "query_category": "not_captured",
+  "customer_bot_attitude": "engaged",
+  "sentiment_start": "neutral",
+  "sentiment_end": "neutral",
+  "sentiment_overall": "neutral",
+  "issue_category": "menu_pricing_setup",
+  "resolved": "no",
+  "feedback_theme": "none",
+  "call_outcome": "agent_unresolved",
+  "transcript_quality": "fair",
+  "bot_issues": [
+   "misunderstood_customer",
+   "ignored_language_choice",
+   "repeated_question"
+  ],
+  "language_request_honored": false,
+  "instructions_followed": false,
+  "reached_human_agent": true,
+  "verbal_feedback_given": false,
+  "bot_guidance_score": 3,
+  "agent_quality_score": 2,
+  "sentiment_score": 0,
+  "confidence": 3,
+  "issue_summary": "add new bar item and set its price",
+  "feedback_text": "",
+  "evidence_sentiment": "",
+  "evidence_bot": "so that we can assist you more efficiently",
+  "missed_instructions": []
+ },
+ "postprocess_changes": [
+  "instructions_followed: True -> False (bot_issues / missed_instructions list an ignored instruction)"
+ ]
+}

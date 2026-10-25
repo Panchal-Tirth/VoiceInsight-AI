@@ -1,0 +1,50 @@
+{
+ "call_id": 405180,
+ "features": {
+  "n_segments": 45,
+  "has_hold_queue": false,
+  "hold_start_sec": null,
+  "hold_end_sec": null,
+  "hold_sec": 0.0,
+  "survey_prompt_reached": false,
+  "queue_abandoned": false,
+  "unclear_share": 0.144,
+  "speech_sec_after_hold": 253.7,
+  "speech_sec_total": 253.7
+ },
+ "duration_sec": 403.39999526400004,
+ "asr_language": "Hindi",
+ "analyzed_at": "2026-10-24T14:01:07.234913+00:00",
+ "model": "openai/gpt-oss-120b",
+ "tokens": 3241,
+ "analysis": {
+  "language_chosen": "hindi",
+  "query_category": "pos_billing",
+  "customer_bot_attitude": "engaged",
+  "sentiment_start": "neutral",
+  "sentiment_end": "neutral",
+  "sentiment_overall": "neutral",
+  "issue_category": "printer_setup",
+  "resolved": "partial",
+  "feedback_theme": "none",
+  "call_outcome": "agent_unresolved",
+  "transcript_quality": "fair",
+  "bot_issues": [
+   "none"
+  ],
+  "language_request_honored": true,
+  "instructions_followed": true,
+  "reached_human_agent": true,
+  "verbal_feedback_given": false,
+  "bot_guidance_score": 5,
+  "agent_quality_score": 3,
+  "sentiment_score": 0,
+  "confidence": 3,
+  "issue_summary": "printer driver sync issue causing billing errors",
+  "feedback_text": "",
+  "evidence_sentiment": "",
+  "evidence_bot": "Hello, पेट पूजा सपोर्ट, आप हिंदी में कमफिटबल हैं या इंग्लिश में?",
+  "missed_instructions": []
+ },
+ "postprocess_changes": []
+}

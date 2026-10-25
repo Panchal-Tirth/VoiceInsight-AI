@@ -1,0 +1,70 @@
+{
+ "n_calls": 70,
+ "sentiment": {
+  "neutral": 42,
+  "unknown": 23,
+  "negative": 5
+ },
+ "sentiment_known_share_pct": 67.1,
+ "positive_pct_of_all": 0.0,
+ "positive_pct_of_known": 0.0,
+ "negative_pct_of_known": 10.6,
+ "outcomes": {
+  "agent_unresolved": 13,
+  "bot_failure": 13,
+  "abandoned_in_bot": 22,
+  "unclear": 20,
+  "resolved_by_agent": 1,
+  "abandoned_in_queue": 1
+ },
+ "reached_human_agent_pct": 38.6,
+ "abandoned_before_agent_pct": 32.9,
+ "calls_with_hold_queue": 13,
+ "median_hold_sec": 94.1,
+ "mean_hold_sec": 141.9,
+ "hold_share_of_total_call_time_pct": 11.9,
+ "bot_guidance_mean": 3.15,
+ "bot_guidance_scored_calls": 66,
+ "instructions_followed_pct": 72.5,
+ "instructions_scored_calls": 40,
+ "survey_prompt_reached_pct": 2.9,
+ "verbal_feedback_calls": 7,
+ "language_chosen": {
+  "english": 6,
+  "hindi": 34,
+  "none": 29,
+  "other": 1
+ },
+ "customer_bot_attitude": {
+  "engaged": 44,
+  "no_interaction": 8,
+  "reluctant": 15,
+  "hung_up_early": 3
+ },
+ "issue_category": {
+  "billing_error": 10,
+  "inventory": 1,
+  "not_discussed": 39,
+  "other": 3,
+  "attendance_hr": 1,
+  "menu_pricing_setup": 2,
+  "login_access": 6,
+  "printer_setup": 8
+ },
+ "resolved": {
+  "no": 7,
+  "unknown": 56,
+  "yes": 1,
+  "partial": 6
+ },
+ "transcript_quality": {
+  "fair": 39,
+  "good": 25,
+  "poor": 6
+ },
+ "models": {
+  "openai/gpt-oss-120b": 61,
+  "rule_based": 3,
+  "openai/gpt-oss-20b": 6
+ }
+}

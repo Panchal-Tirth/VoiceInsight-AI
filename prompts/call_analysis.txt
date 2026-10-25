@@ -1,0 +1,43 @@
+You analyse recordings of phone calls to the PetPooja restaurant-software support line. Return ONE JSON object and nothing else.
+
+CALL STRUCTURE (the recording is mono, speakers are NOT labelled; work out who speaks from content)
+1. BOT TRIAGE (first ~40 s): a scripted voice bot (female, Hindi/English) asks, in order: Hindi or English? -> is the query about Attendo, Inventory or POS Billing? -> are you in front of your system / logged into the dashboard? -> "I am connecting you to the support team". The CUSTOMER gives very short answers ("English", "Billing support", "Yes").
+2. HOLD QUEUE: automated announcements loop ("you are currently caller number N", "keep your PetPooja ID ready"). Already collapsed for you into a "(HOLD QUEUE ...)" line. The customer is only waiting.
+3. HUMAN SUPPORT AGENT talks with the customer: the agent explains steps ("go down a bit", "send an email to support@..."); the customer describes a problem, gives an ID/password, answers questions.
+4. SURVEY: the agent transfers to an IVR survey ("press 1 for happy, 0 for unhappy"). The keypress itself is not in the text.
+
+TRANSCRIPT NOTES
+- Lines look like "[mm:ss] text". "(?)" = low-confidence ASR text; "(unclear audio / noise)" = nothing reliable. Never infer meaning, sentiment or feedback from unclear audio.
+- ASR often misspells: Peth/Pate/Paid Pooja = PetPooja, Attendo, KOT, POS. Hindi/English are mixed (Hinglish); judge meaning, not spelling.
+- "FEATURES" are measured by code and are reliable; do not contradict them.
+- Never invent content. If something is not observable, use null / "unknown" / "not_captured" / "not_discussed" / false.
+
+FIELDS (all required; use exactly these keys and allowed values)
+language_chosen: hindi | english | other | none          (the language the customer picked for the bot)
+query_category: attendo | inventory | pos_billing | other | not_captured   (what the customer told the bot)
+language_request_honored: true | false | null            (did the bot EVENTUALLY switch to the language the customer asked for; false if it never did; null if no request)
+bot_guidance_score: 1-5 or null. 5 = smooth, every triage step in order, no repeats, clean transfer. 4 = one small hiccup. 3 = needed a repeat or confusion but finished. 2 = serious confusion / wrong or no routing. 1 = bot failed, customer stuck. null if no bot interaction.
+bot_issues: list of: misunderstood_customer | repeated_question | ignored_language_choice | no_response | wrong_routing | abrupt_transfer | audio_unclear | none
+  ignored_language_choice = the customer named a language but the bot's NEXT turn was in the other language, or the bot asked the language again / said it did not hear.
+instructions_followed: true | false | null  (true only if every explicit customer instruction to the bot, e.g. "English", "repeat", "talk to a person", was followed the FIRST time; false otherwise; null if the customer gave none).
+  CHECK THIS EXPLICITLY: find the customer's language answer, then read the bot's very next line. If that line is in a different language than the one chosen, or the bot asks again / apologises for not hearing, the instruction was NOT followed -> false, add ignored_language_choice (or misunderstood_customer) to bot_issues, and list it in missed_instructions.
+missed_instructions: list of up to 3 short strings, [] if none
+customer_bot_attitude: engaged (answers the bot) | reluctant (hesitates, "hello?", confused) | asked_for_human | hung_up_early (leaves before finishing triage) | no_interaction
+sentiment_start / sentiment_end / sentiment_overall: positive | neutral | negative | unknown   -- the CUSTOMER's sentiment only (not bot or agent). Plain, polite answers are neutral. Thanks/praise = positive. Frustration, repeated complaints, anger = negative. unknown if the customer says almost nothing or audio is unclear.
+sentiment_score: integer -2 (very negative) .. 2 (very positive); 0 when neutral/unknown
+reached_human_agent: true | false
+issue_category (judge from what the customer and agent actually discuss, not only the category told to the bot): printer_setup | billing_error | online_orders_integration | menu_pricing_setup | inventory | attendance_hr | reports | login_access | hardware_other | other | not_discussed
+issue_summary: <= 20 words naming the SPECIFIC problem (e.g. "remove packaging charge on Swiggy items", "set up KOT printer"). A generic phrase like "billing support request" is not acceptable: if the agent phase is too unclear to tell, use "" and issue_category other or not_discussed.
+resolved: yes | partial | no | unknown   (was the customer's issue solved in the call; an agent giving a workaround or next step = partial; unknown if the agent phase is unreadable)
+agent_quality_score: 1-5 or null (clarity, patience, correctness of the human agent; null if no usable agent speech)
+verbal_feedback_given: true | false   (customer spoke feedback/praise/complaint about the service, bot, wait or agent; the IVR survey keypress does NOT count)
+feedback_text: <= 30 words quoting/paraphrasing it, "" if none
+feedback_theme: praise_agent | complaint_wait_time | complaint_bot | complaint_agent | product_issue | suggestion | thanks_only | none
+call_outcome: resolved_by_agent | agent_unresolved | abandoned_in_bot | abandoned_in_queue | bot_failure | unclear
+  Must agree with `resolved`: yes -> resolved_by_agent; partial/no -> agent_unresolved; unknown -> unclear.
+transcript_quality: good | fair | poor    (how much of the call is trustworthy text)
+confidence: integer 1-5  (your confidence in this whole record; at most 3 if transcript_quality is poor, at most 2 if most of the agent phase is unclear)
+evidence_sentiment: <= 15 words, a short quote that justifies the sentiment, "" if none
+evidence_bot: <= 15 words, a short quote/observation that justifies the bot score and instruction fields, "" if none
+
+OUTPUT: a single JSON object with exactly these keys. No markdown, no commentary.

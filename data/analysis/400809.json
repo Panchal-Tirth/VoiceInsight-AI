@@ -1,0 +1,53 @@
+{
+ "call_id": 400809,
+ "features": {
+  "n_segments": 9,
+  "has_hold_queue": false,
+  "hold_start_sec": null,
+  "hold_end_sec": null,
+  "hold_sec": 0.0,
+  "survey_prompt_reached": false,
+  "queue_abandoned": false,
+  "unclear_share": 0.0,
+  "speech_sec_after_hold": 53.3,
+  "speech_sec_total": 53.3
+ },
+ "duration_sec": 63.221874688,
+ "asr_language": "Hindi",
+ "analyzed_at": "2026-10-24T13:46:21.932117+00:00",
+ "model": "openai/gpt-oss-120b",
+ "tokens": 2417,
+ "analysis": {
+  "language_chosen": "other",
+  "query_category": "pos_billing",
+  "customer_bot_attitude": "engaged",
+  "sentiment_start": "neutral",
+  "sentiment_end": "neutral",
+  "sentiment_overall": "neutral",
+  "issue_category": "billing_error",
+  "resolved": "unknown",
+  "feedback_theme": "none",
+  "call_outcome": "abandoned_in_bot",
+  "transcript_quality": "fair",
+  "bot_issues": [
+   "ignored_language_choice",
+   "audio_unclear"
+  ],
+  "language_request_honored": false,
+  "instructions_followed": false,
+  "reached_human_agent": false,
+  "verbal_feedback_given": false,
+  "bot_guidance_score": 2,
+  "agent_quality_score": null,
+  "sentiment_score": 0,
+  "confidence": 3,
+  "issue_summary": "",
+  "feedback_text": "",
+  "evidence_sentiment": "",
+  "evidence_bot": "\"मले आलम\" language choice ignored",
+  "missed_instructions": [
+   "ignored language choice"
+  ]
+ },
+ "postprocess_changes": []
+}

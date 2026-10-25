@@ -1,0 +1,50 @@
+{
+ "call_id": 399797,
+ "features": {
+  "n_segments": 20,
+  "has_hold_queue": false,
+  "hold_start_sec": null,
+  "hold_end_sec": null,
+  "hold_sec": 0.0,
+  "survey_prompt_reached": false,
+  "queue_abandoned": false,
+  "unclear_share": 0.0,
+  "speech_sec_after_hold": 186.3,
+  "speech_sec_total": 186.3
+ },
+ "duration_sec": 214.259998848,
+ "asr_language": "Hindi",
+ "analyzed_at": "2026-10-24T13:35:57.502899+00:00",
+ "model": "openai/gpt-oss-120b",
+ "tokens": 2645,
+ "analysis": {
+  "language_chosen": "hindi",
+  "query_category": "inventory",
+  "customer_bot_attitude": "engaged",
+  "sentiment_start": "neutral",
+  "sentiment_end": "neutral",
+  "sentiment_overall": "neutral",
+  "issue_category": "inventory",
+  "resolved": "no",
+  "feedback_theme": "none",
+  "call_outcome": "agent_unresolved",
+  "transcript_quality": "fair",
+  "bot_issues": [
+   "none"
+  ],
+  "language_request_honored": true,
+  "instructions_followed": true,
+  "reached_human_agent": true,
+  "verbal_feedback_given": false,
+  "bot_guidance_score": 4,
+  "agent_quality_score": 3,
+  "sentiment_score": 0,
+  "confidence": 3,
+  "issue_summary": "change effective price in inventory",
+  "feedback_text": "",
+  "evidence_sentiment": "",
+  "evidence_bot": "हिंदी और इंग्लिश दोनों भी चलेगा",
+  "missed_instructions": []
+ },
+ "postprocess_changes": []
+}

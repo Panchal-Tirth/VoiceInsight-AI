@@ -1,0 +1,33 @@
+# secrets
+.env
+
+# virtual envs and caches
+myenv/
+venv/
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# customer data (audio, raw export, transcripts)
+data/raw/
+data/audio/
+data/transcripts/
+data/*.part
+dashboard/public/data.json
+
+# usage ledgers and logs
+data/whisper_usage.csv
+data/llm_usage.csv
+logs/
+
+# node / next
+dashboard/node_modules/
+dashboard/.next/
+dashboard/next-env.d.ts
+
+# os / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

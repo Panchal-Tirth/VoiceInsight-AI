@@ -1,0 +1,51 @@
+{
+ "call_id": 403248,
+ "features": {
+  "n_segments": 40,
+  "has_hold_queue": true,
+  "hold_start_sec": 101.16,
+  "hold_end_sec": 175.68,
+  "hold_sec": 74.5,
+  "survey_prompt_reached": false,
+  "queue_abandoned": false,
+  "unclear_share": 0.142,
+  "speech_sec_after_hold": 117.0,
+  "speech_sec_total": 209.4
+ },
+ "duration_sec": 366.880003072,
+ "asr_language": "Hindi",
+ "analyzed_at": "2026-10-24T13:52:39.240873+00:00",
+ "model": "openai/gpt-oss-120b",
+ "tokens": 2542,
+ "analysis": {
+  "language_chosen": "none",
+  "query_category": "not_captured",
+  "customer_bot_attitude": "engaged",
+  "sentiment_start": "neutral",
+  "sentiment_end": "neutral",
+  "sentiment_overall": "neutral",
+  "issue_category": "not_discussed",
+  "resolved": "unknown",
+  "feedback_theme": "none",
+  "call_outcome": "unclear",
+  "transcript_quality": "fair",
+  "bot_issues": [
+   "no_response",
+   "audio_unclear"
+  ],
+  "language_request_honored": null,
+  "instructions_followed": null,
+  "reached_human_agent": false,
+  "verbal_feedback_given": false,
+  "bot_guidance_score": 1,
+  "agent_quality_score": null,
+  "sentiment_score": 0,
+  "confidence": 3,
+  "issue_summary": "",
+  "feedback_text": "",
+  "evidence_sentiment": "",
+  "evidence_bot": "पेट पूटा सपोर्ट",
+  "missed_instructions": []
+ },
+ "postprocess_changes": []
+}
